@@ -1,0 +1,52 @@
+
+--------- PROJECT TITLE:TEXT EDITOR -----------------
+
+DESCRIPTION: A simple Text Editor having 3 sets of functions 1)File 2)Edit 3)Close apart from writing text into the file. 
+	     
+	     File functions: a)New: to open a new file
+			     b)Open: to open a saved file
+			     c)Save: to save the file 
+			     d)Print: to print the current file
+
+	     Edit functions: a)Cut: to remove the highlighted text and save it.
+			     b)Copy: to save the highlighted text.
+			     c)Paste: to paste the last saved text.
+
+	     Close function: To exit the app.
+
+
+Programming Language:	Java is used in programming the application.
+			GUI:Java swing and AWT were used for graphical user interface.
+			
+Sample code:		 // Create a menubar
+        		JMenuBar mb = new JMenuBar();
+			
+			JMenu m1 = new JMenu("File");
+ 
+        		// Create menu items
+        		JMenuItem mi1 = new JMenuItem("New");
+        		JMenuItem mi2 = new JMenuItem("Open");
+        		JMenuItem mi3 = new JMenuItem("Save");
+        		JMenuItem mi9 = new JMenuItem("Print");
+ 
+        		// Add action listener
+        		mi1.addActionListener(this);
+        		mi2.addActionListener(this);
+        		mi3.addActionListener(this);
+        		mi9.addActionListener(this);
+ 
+        		m1.add(mi1);
+        		m1.add(mi2);
+        		m1.add(mi3);
+        		m1.add(mi9);
+			
+			---------------------------------------CODE Explanation-------------------------
+
+			mb is a menu bar(multiple menus could be added to menu bar (File,Edit etc.,))
+			m1 is a menu
+			mi1(New),mi2(Open) etc., are menu items added to m1(File) menu through add method.
+
+
+How to run the application: RUN THE MyEditor JAR FILE. 
+ 
+ 
